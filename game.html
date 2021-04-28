@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UFC Quiz Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+
+  <body>
+    <nav class="game-nav">
+        The Ultimate
+        <img class="main-nav-img" src="./UFC-logo.svg" alt="UFC" /> Quiz
+      </nav>
+
+      <div id="nav-div">
+        <div class="left-info">
+          <p id="progressText" class="left-text">Question</p>
+          <div id="progressBar">
+            <div id="progressBarFull"></div>
+          </div>
+        </div>
+        <div class="right-info">
+          <p class="right-text">Score</p>
+          <h1 class="current-score" id="score">0</h1>
+        </div>
+      </div>
+    </nav>
+
+    <div class="game-container">
+      <div id="main-div-game">
+          <div class="question-box">
+        <h2 id="question">What is the answer to this question?</h2>
+    </div>
+
+        <div class="big-box">
+        <div class="answer-box">
+            <button class="answer-container">
+          <p class="answer-text" data-number="1">Choice1</p>
+        </button>
+        <button class="answer-container">
+          <p class="answer-text" data-number="2">Choice2</p>
+        </button>
+    </div>
+    <div class="answer-box">
+        <button class="answer-container">
+          <p class="answer-text" data-number="3">Choice3</p>
+        </button>
+        <button class="answer-container">
+          <p class="answer-text" data-number="4">Choice4</p>
+        </button>
+    </div>
+</div>
+
+      </div>
+    </div>
+    <embed src="./bruce-buffer-its-time.mp3" loop="false" autostart="true" width="0" height="0"/>
+    <footer class="footer-main">GastonIse x Ironhack</footer>
+</body>
+</html>

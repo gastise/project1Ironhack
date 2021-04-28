@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: lightslategray;
+  background-image: url("https://sqaf.club/wp-content/uploads/2020/09/how-big-is-the-octagon.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+/*
+index.html
+*/
+
+.main-nav {
+  color: black;
+  background-color: white;
+  margin: 0;
+  height: auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.main-nav-img {
+  width: 50px;
+  height: 20px;
+}
+
+h1 {
+  font-size: 7rem;
+  color: #cd0000;
+  margin-bottom: 4rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+h2 {
+  color: #cd0000;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #cd0000;
+  border-radius: 4px;
+  background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 10, 255) 100%);
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(199, 9, 9, 0.6);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
+.footer-main {
+  color: black;
+  background-color: white;
+  margin-bottom: 0;
+  height: auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/*
+game.html
+*/
+
+.game-nav {
+  color: black;
+  background-color: white;
+  margin: 0;
+  height: auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#nav-div {
+  display: flex;
+  justify-content: space-between;
+  height: 180px;
+}
+
+.left-info {
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.left-text {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 3rem;
+  border: 0.5rem solid rgb(11, 223, 36);
+  margin-top: 2rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progressBarFull {
+  height: 100%;
+  background: rgb(11, 223, 36);
+  width: 0%;
+}
+
+.right-info {
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+.right-text {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.current-score {
+  text-align: center;
+}
+
+.game-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+#main-div-game {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.question-box {
+  height: 100px;
+  width: 1150px;
+  margin: 0px 10% 10px 10%;
+  padding: 25px 0;
+  background: whitesmoke;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.answer-container {
+  color: #cd0000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  height: 100px;
+  width: 450px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  display: inline;
+  text-align: center;
+}
+
+.answer-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(199, 9, 9, 0.6);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
+.big-box {
+  display: flex;
+}
+
+.correct {
+  background: linear-gradient(
+    40deg,
+    rgba(11, 223, 36) 0%,
+    rgb(41, 232, 111) 100%
+  );
+}
+
+.incorrect {
+  background: linear-gradient(
+    40deg,
+    rgba(230, 29, 29, 1) 0%,
+    rgb(224, 11, 11, 1) 100%
+  );
+}
+
+/*
+end.html
+*/
+
+.end-nav {
+  color: black;
+  background-color: white;
+  margin: 0;
+  height: auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.end-nav-img {
+  width: 50px;
+  height: 20px;
+}
+
+#finalScore {
+  color: #cd0000;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  height: 80px;
+  width: 600px;
+  background: whitesmoke;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  display: inline;
+  justify-content: center;
+  text-align: center;
+}
+
+#feedback {
+  color: #cd0000;
+  font-size: 2rem;
+  height: 120px;
+  width: 900px;
+  margin: 20px 10% 50px 10%;
+  padding: 20px 0;
+  background: whitesmoke;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  display: inline;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-end {
+  color: black;
+  background-color: white;
+  margin-bottom: 0;
+  height: auto;
+  padding: 20px 0;
+  text-align: center;
+}
